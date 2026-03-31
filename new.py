@@ -13,7 +13,6 @@ LOGO_PATH = "clglogo.jpeg"
 CREDENTIALS_FILE = "credentials.csv"
 DATA_FILE = "abi.xlsx"
 
-st.set_page_config(page_title="Fees Management System", page_icon=ICON_PATH, layout="wide")
 
 # ---------------------- SESSION INIT ----------------------
 if 'page' not in st.session_state:
