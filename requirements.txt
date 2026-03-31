@@ -2,4 +2,4 @@ streamlit
 pandas
 openpyxl
 qrcode
-xhtml2pdf
+pillow
