@@ -5,7 +5,7 @@ import os
 import qrcode
 import tempfile
 from io import BytesIO
-from xhtml2pdf import pisa
+
 import base64
 
 # ---------------------- CONFIG / PATHS ----------------------
@@ -524,11 +524,7 @@ def pay_fees_page(df):
                 """
                 st.markdown(tc_html, unsafe_allow_html=True)
                 tc_pdf = BytesIO()
-                pisa_status = pisa.CreatePDF(tc_html, dest=tc_pdf)
-                if not pisa_status.err:
-                    st.download_button("📥 Download TC as PDF", data=tc_pdf.getvalue(), file_name=f"{tc_no}.pdf", mime="application/pdf")
-                else:
-                    st.error("❌ Failed to generate TC PDF")
+                
 
         # ---------------------- CONDUCT CERTIFICATE ----------------------
         st.subheader("📜 Conduct Certificate")
@@ -565,11 +561,7 @@ def pay_fees_page(df):
                 """
                 st.markdown(conduct_html, unsafe_allow_html=True)
                 cc_pdf = BytesIO()
-                pisa_status = pisa.CreatePDF(conduct_html, dest=cc_pdf)
-                if not pisa_status.err:
-                    st.download_button("📥 Download CC as PDF", data=cc_pdf.getvalue(), file_name=f"{cc_no}.pdf", mime="application/pdf")
-                else:
-                    st.error("❌ Failed to generate CC PDF")
+               
 
 def online_payment_page():
     st.subheader("📲 Online UPI Payment")
