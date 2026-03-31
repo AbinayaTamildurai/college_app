@@ -9,10 +9,9 @@ from io import BytesIO
 import base64
 
 # ---------------------- CONFIG / PATHS ----------------------
-LOGO_PATH = r"C:\Users\muthu\OneDrive\Desktop\collegeapp\clglogo.jpeg"
-ICON_PATH = r"C:\Users\muthu\Desktop\FeesApp\Screenshot 2025-04-24 153118.ico"
-CREDENTIALS_FILE = r"C:\Users\muthu\OneDrive\Desktop\collegeapp\credentials.csv"
-DATA_FILE = r"C:\Users\muthu\OneDrive\Desktop\collegeapp\abi.xlsx"
+LOGO_PATH = "clglogo.jpeg"
+CREDENTIALS_FILE = "credentials.csv"
+DATA_FILE = "abi.xlsx"
 
 st.set_page_config(page_title="Fees Management System", page_icon=ICON_PATH, layout="wide")
 
