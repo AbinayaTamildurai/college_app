@@ -1,5 +1,5 @@
 streamlit
 pandas
-openpyxl
 qrcode
-pillow
+xhtml2pdf
+openpyxl
